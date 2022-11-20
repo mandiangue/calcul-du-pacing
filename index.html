@@ -1,0 +1,94 @@
+<!--Author: MANDIAN Mohamadou-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul du pacing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary p-3">
+        <div class="container">
+          <a class="navbar-brand fs-2 topbar">I Lôve Lôad... </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+        <div class="message mt-4"></div>
+        <div class="wrapform m-4 p-5">
+            <form class="form-row  col">
+                <div class="form-group">
+               <label class="form-label">Nom du script</label>
+                    <input type="text" class="form-control ns" id="input" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Nbre de vuser</label>
+                    <input type="number" class="form-control vu" id="input" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Nbre d'itération/heure</label>
+                    <input type="number" class="form-control iterationh" id="input" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Nbre d'itération/heure/Vu</label>
+                    <input type="number" class="form-control iterationv" id="input" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Pacing</label>
+                    <input type="number" class="form-control pacing" id="input"  autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Durée du tir en seconde</label>
+                    <input type="number" class="form-control dureetir" id="input" autocomplete="off">
+                   
+                </div>
+                <div class="add" title="Ajouter votre script">+</div>
+                
+            </form>
+        </div>
+        <div class="form-group row btngroup">
+            <button type="submit" class="calciterationh btn btn-primary col" > Trouver le nbre d'itération/heure</button>
+            <button type="submit" class="calciterationhv btn btn-warning col"> Trouver le nbre d'itération/heure/vu</button>
+            <button type="submit" class="calcBtn btn btn-success col"> Trouver le pacing</button>
+           
+     </div>
+        </div>
+
+        <div class="col liste m-4 table-responsive">
+            <table class="table table-bordered" id="tableau">
+                <thead class="tdlist">
+                <tr>
+                    <th scope="col">Nom des scripts</th>
+                    <th scope="col">Nbre de Vusers</th>
+                    <th scope="col">Nbre d'itération/heure</th>
+                    <th scope="col">Nbre d'itération/heure/vu</th>
+                    <th scope="col">Pacing</th>
+                     <th scope="col">Durée du tir</th>
+                     <th scope="col">Remove</th>
+                  </tr>
+                </thead>
+
+            </table>
+          
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+       
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
